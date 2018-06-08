@@ -31,7 +31,7 @@ def self.genre_count
     b = {genre: 1}
     b.update(a){|genre, v| v + 1 }
   end
-a
+b
 end
 
 def self.artist_count
