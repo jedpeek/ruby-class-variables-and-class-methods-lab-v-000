@@ -31,7 +31,6 @@ def self.genre_count
     b = {"#{genre}": 1}
     a.update(b){|genre, v| v + 1 }
   end
-a.key = a.key.to_s
 a
 end
 
