@@ -26,7 +26,7 @@ class Song
   end
 
 def self.genre_count
-  @@genres
+  @@genres.to_h
   #if genre_list.has_key?(genre)
   end
 
