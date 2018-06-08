@@ -29,7 +29,7 @@ def self.genre_count
   a = {}
   @@genres.each do |genre|
     b = {genre: 1}
-    a.update(a){|genre, v| v + 1 }
+    b.update(a){|genre, v| v + 1 }
   end
 a
 end
