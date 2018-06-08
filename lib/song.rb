@@ -28,7 +28,10 @@ class Song
 def self.genre_count
   a = {}
   @@genres.each do |genre|
-    a = Hash[genre, 1]
+    a.merge[genre, 1]
+    #a.member?(genre)
+
+    }
   end
 a
 end
