@@ -35,8 +35,12 @@ genre_count
 end
 
 def self.artist_count
-  @@artists.uniq.length
+  artist_count = {}
+  @@artists.each do |artist|
+    b = {"#{artist}" => 1}
+    artist_count.update(b){|genre, v| v + 1 }
+  end
+genre_count
 end
-
 
 end
