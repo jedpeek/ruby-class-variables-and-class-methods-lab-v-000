@@ -30,8 +30,7 @@ def self.genre_count
   if @@genres.each do |genre|
     a = Hash[genre, 1]
   end
-
-
+a
 end
 
 def self.artist_count
