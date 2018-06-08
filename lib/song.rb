@@ -25,22 +25,22 @@ class Song
     @@genres.uniq
   end
 
-def self.genre_count
-  genre_count = {}
-  @@genres.each do |genre|
-    b = {"#{genre}" => 1}
-    genre_count.update(b){|genre, v| v + 1 }
+  def self.genre_count
+    genre_count = {}
+    @@genres.each do |genre|
+      b = {"#{genre}" => 1}
+      genre_count.update(b){|genre, v| v + 1 }
+    end
+  genre_count
   end
-genre_count
-end
 
-def self.artist_count
-  artist_count = {}
-  @@artists.each do |artist|
-    b = {"#{artist}" => 1}
-    artist_count.update(b){|genre, v| v + 1 }
+  def self.artist_count
+    artist_count = {}
+    @@artists.each do |artist|
+      b = {"#{artist}" => 1}
+      artist_count.update(b){|genre, v| v + 1 }
+    end
+  artist_count
   end
-artist_count
-end
 
 end
