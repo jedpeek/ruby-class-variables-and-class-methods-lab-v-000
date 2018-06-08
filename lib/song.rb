@@ -26,7 +26,9 @@ class Song
   end
 
 def self.genre_count
-  @@genres.to_h
+  genre_count = []
+  if @@genres.each do |genre|
+
   #if genre_list.has_key?(genre)
   end
 
