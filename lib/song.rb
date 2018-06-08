@@ -30,8 +30,6 @@ def self.genre_count
   @@genres.each do |genre|
     a.merge[genre, 1]
     #a.member?(genre)
-
-    }
   end
 a
 end
