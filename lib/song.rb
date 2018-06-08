@@ -28,8 +28,7 @@ class Song
 def self.genre_count
   a = {}
   @@genres.each do |genre|
-    a.merge(genre)
-    a.update(a){|k, v| v + 1 }
+    a.update(genre){|k, v| v + 1 }
   end
 a
 end
