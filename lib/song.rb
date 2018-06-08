@@ -40,7 +40,7 @@ def self.artist_count
     b = {"#{artist}" => 1}
     artist_count.update(b){|genre, v| v + 1 }
   end
-genre_count
+artist_count
 end
 
 end
